@@ -1,0 +1,64 @@
+.wrap{
+  width: 600px;
+  margin: 0 auto;
+}
+.niceCheck {
+width: 17px;
+height: 17px;
+display: block;
+cursor: pointer;
+background: url(img/cb.png);
+position: relative;
+left: 20px;
+}
+.niceCheck input {
+display: none;
+}
+
+		
+.checkONjquery{
+	width: 960px;
+	margin: 0 auto;
+	background-color: yellowgreen;
+	
+}
+.pad{
+	padding-left: 20px;
+}
+
+.checkONcss{
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	background-color: #eee;
+}
+.checkCss[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.labelCss {
+	cursor: pointer;
+}
+.labelCss:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(img/cb.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+.checkCss[type=checkbox]:checked + .labelCss:after {
+background-position: 0 -17px;
+}
+.labelCss:hover:after {
+background-position: 0 -34px;
+}
+.checkCss[type=checkbox]:checked + .labelCss:hover:after {
+background-position: 0 -51px;
+}
+
+
+
